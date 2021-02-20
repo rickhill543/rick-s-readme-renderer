@@ -1,1 +1,1 @@
-# rick-s-readme-renderer
+# ricks-readme-renderer

@@ -1,3 +1,5 @@
+const fileName = "./README.md";
+
 // packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
@@ -120,7 +122,27 @@ const questions = () => {
    }
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    return new Promise((resolve, reject) => {
+      fs.writeFile(fileName, data, err => {
+        if (err) {
+          reject(err);
+          return;
+        }
+        resolve({
+          ok: true,
+          message: 'File created!'
+        });
+        console.log(`
+  
+        ===================================================
+        ricks readme of ridiculous revelation has rendered!
+        ===================================================
+  
+        `);
+      });
+    });
+  }
 
 // a function that initializes the app
 function init() {
@@ -130,8 +152,11 @@ function init() {
         return generateMarkdown(projectData);
       })
       .then(data => {
-          console.log(data);
+        return writeToFile(fileName, data);
       })
+      .catch(err => {
+        console.log(err);
+      });
 }
 
 // a function call that initializes the app

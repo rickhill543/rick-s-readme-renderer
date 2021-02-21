@@ -1,6 +1,7 @@
 // packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // an array of questions for user input using the inquirer package
 const questions = () => { 
@@ -123,7 +124,14 @@ function writeToFile(fileName, data) {}
 
 // a function that initializes the app
 function init() {
-    questions();
+    questions()
+    .then(projectData => {
+        license = projectData.license;
+        return generateMarkdown(projectData);
+      })
+      .then(data => {
+          console.log(data);
+      })
 }
 
 // a function call that initializes the app

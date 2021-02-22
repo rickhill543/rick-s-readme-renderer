@@ -108,8 +108,6 @@ ${data.description}
 
 * [License](#license)
 
-* [Features](#features)
-
 * [Contributing](#contributing)
 
 * [Tests](#tests)

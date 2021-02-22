@@ -46,15 +46,14 @@ Here's a video of the process: https://drive.google.com/file/d/1nS5xmD6qgYakakil
 
 ## License
 
-    This project is covered under the MIT license
+This project is covered under the MIT license
 
-    Massachusetts Institute of Technology (MIT) License is free license software. The MIT License grants the software end user rights such as copying, modifying, merging, distributing, etc. It is notable for what it does not contain, such as clauses for advertising and prohibition of the use of the copyright owner’s name for promotional uses. The MIT License is a free and open source software similar to the Berkeley Software Distribution (BSD) License.
+Massachusetts Institute of Technology (MIT) License is free license software. The MIT License grants the software end user rights such as copying, modifying, merging, distributing, etc. It is notable for what it does not contain, such as clauses for advertising and prohibition of the use of the copyright owner’s name for promotional uses. The MIT License is a free and open source software similar to the Berkeley Software Distribution (BSD) License.
 
-    -------------------------------------------------------------------
-    Here is a Wikipedia article on the license for further information:
-    https://en.wikipedia.org/wiki/MIT_License
-    
-    
+-------------------------------------------------------------------
+Here is a Wikipedia article on the license for further information:
+https://en.wikipedia.org/wiki/MIT_License
+
 
 
 ## Contributing

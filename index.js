@@ -121,7 +121,7 @@ const questions = () => {
      ]);
    }
 
-// TODO: Create a function to write README file
+// a function that writes the relevant data to a README.md file
 function writeToFile(fileName, data) {
     return new Promise((resolve, reject) => {
       fs.writeFile(fileName, data, err => {
@@ -146,11 +146,14 @@ function writeToFile(fileName, data) {
 
 // a function that initializes the app
 function init() {
+  // this runs the first function of questions to grab the user input.
     questions()
+    // followed by a few promises that process this user input
     .then(projectData => {
         license = projectData.license;
         return generateMarkdown(projectData);
       })
+      // calls the write file function once all relevant data is compiled
       .then(data => {
         return writeToFile(fileName, data);
       })
